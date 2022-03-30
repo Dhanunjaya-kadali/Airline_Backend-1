@@ -21,7 +21,7 @@ public class Booking {
 
 	
 	@Id
-	@Column (name = "BOOKING_ID")
+	//@Column (name = "BOOKING_ID")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BOOKING_SEQ")
 	@SequenceGenerator(sequenceName = "bookingid_seq", allocationSize=1, name = "BOOKING_SEQ")
 	private int bookingId;
@@ -35,19 +35,19 @@ public class Booking {
 	private Flight flight;
 	
 
-	@Column (name = "BOOKING_STATUS")
+	//@Column (name = "BOOKING_STATUS")
 	private String bookingStatus;
 	
-	@Column (name = "NO_OF_PASSENGERS")
+	//@Column (name = "NO_OF_PASSENGERS")
 	private int noOfPassengers;
 	
-	@Column (name = "TOTAL_COST")
+	//@Column (name = "TOTAL_COST")
 	private long totalCost;
 	
-	@Column (name = "REFUND_AMOUNT")
+	//@Column (name = "REFUND_AMOUNT")
 	private long refundAmount;
 	
-	@Column(name="TRAVEL_CLASS")
+	//@Column(name="TRAVEL_CLASS")
 	private String travelClass;
 	
 	public Booking() {

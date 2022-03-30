@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.arp.lti.beans.Booking;
 import com.arp.lti.beans.Flight;
 import com.arp.lti.beans.User;
-import com.arp.lti.beans.sFlight;
+import com.arp.lti.beans.SearchFlight;
 import com.arp.lti.services.BookingService;
 import com.arp.lti.services.UserServiceImpl;
 
@@ -34,12 +34,12 @@ public class BookingController {
 
 	@PostMapping("/addBooking")
 	public Booking addBooking(@RequestBody Booking b)
-	{
+	{ 
 		return service.addBooking(b);
 	}
 	
 	@PostMapping("/sFlight" )
-	public List<Flight> getFlightList(@RequestBody sFlight sf)
+	public List<Flight> getFlightList(@RequestBody SearchFlight sf)
 	{
 		return service.searchFlight(sf);
 	}

@@ -2,16 +2,16 @@ package com.arp.lti.beans;
 
 import java.sql.Date;
 
-public class sFlight {
+public class SearchFlight {
 
 	private String source;
 	private String destination;
 	private String departureDate;
 	private String travelClass;
-	public sFlight() {
+	public SearchFlight() {
 		super();
 	}
-	public sFlight(String source, String destination, String departureDate, String travelClass) {
+	public SearchFlight(String source, String destination, String departureDate, String travelClass) {
 		super();
 		this.source = source;
 		this.destination = destination;

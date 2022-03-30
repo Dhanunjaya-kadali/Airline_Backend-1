@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.arp.lti.beans.Booking;
 import com.arp.lti.beans.Flight;
 import com.arp.lti.beans.User;
-import com.arp.lti.beans.sFlight;
+import com.arp.lti.beans.SearchFlight;
 import com.arp.lti.dao.BookingDao;
 
 @Service("bookingService")
@@ -35,7 +35,7 @@ public class BookingServiceImpl implements BookingService{
 	}
 
 @Override
-public List<Flight> searchFlight(sFlight sf) {
+public List<Flight> searchFlight(SearchFlight sf) {
 	// TODO Auto-generated method stub
 	return dao.searchFlight(sf);
 }

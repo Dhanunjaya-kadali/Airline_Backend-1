@@ -24,7 +24,7 @@ import com.arp.lti.beans.Flight;
 import com.arp.lti.beans.Passenger;
 import com.arp.lti.beans.Payment;
 import com.arp.lti.beans.User;
-import com.arp.lti.beans.sFlight;
+import com.arp.lti.beans.SearchFlight;
 
 @Repository("bookingDao")
 @EnableTransactionManagement
@@ -44,7 +44,7 @@ public class BookingDaoImpl implements BookingDao {
 	@Transactional
 
 	@Override
-	public List<Flight> searchFlight(sFlight sf) {
+	public List<Flight> searchFlight(SearchFlight sf) {
 		int e1, e2, b1, b2;
 
 		Date departureDate1 = null;
